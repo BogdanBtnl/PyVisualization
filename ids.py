@@ -207,17 +207,6 @@ def search(x,y):
                     break
         limit+=1
 
-
-
-def backRoute(x, y):
-    yellow.goto(x, y)
-    yellow.stamp()
-    while (x, y) != (start_x, start_y):
-        yellow.goto(solution[x, y])
-        yellow.stamp()
-        x, y = solution[x, y]
-
-
 maze = Maze()
 red = Red()
 blue = Blue()
@@ -233,5 +222,4 @@ solution = {}
 
 setup_maze(grid)
 search(start_x,start_y)
-# backRoute(end_x, end_y)
 wn.exitonclick()
