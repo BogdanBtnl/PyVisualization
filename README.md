@@ -7,4 +7,3 @@ Depth-limited search ( dls.py) ,
 Iterative deepening search ( ids.py) ,
 A* ( as.py) ,
 Greedy search ( gs.py)
-
